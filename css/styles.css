@@ -6,7 +6,7 @@
 :root {
   --color-win: #81c259;
   --color-lose: #de8519;
-  --color-start: #1c2b3d;
+  --color-start: #8353ea;
   --color-neutral: #445069;
   --color-neutral-light: #D2D2D2;
   --color-keys: #37474F;
@@ -37,7 +37,7 @@ li, ol, ul {
 h2 {
   margin: 0;
   text-transform: uppercase;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: var(--font-size-large);
   margin: 0;
 }
