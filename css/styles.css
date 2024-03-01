@@ -1,12 +1,12 @@
 /* Main styles */
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&Roboto:300');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:wght@600&display');
 
 /* Variables */
 
 :root {
-  --color-win: #78CF82;
-  --color-lose: #D94545;
-  --color-start: #5b85b7;
+  --color-win: #81c259;
+  --color-lose: #de8519;
+  --color-start: #1c2b3d;
   --color-neutral: #445069;
   --color-neutral-light: #D2D2D2;
   --color-keys: #37474F;
