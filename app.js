@@ -13,7 +13,9 @@ var score;
 var missed = 0;
 var resetGame = false;
 
-const phrases = [
+var resetButton = document.querySelector(`.btn_reset`);
+
+var phraseArray = [
 	'Just Do It',
 	'Have it your way',
 	'The quicker picker upper',
