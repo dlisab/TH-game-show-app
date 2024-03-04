@@ -25,7 +25,7 @@ const phrases = [
 
 
 //Hides the Wheel of Success overlay to display game
-function clearOverlay(display, cssClass){
+function clearOverlay(display, cssClass, buttonElement){
 	overlay.addEventListener('click', (e) => {
 		overlay.style.display = display;
 		overlay.classList.add(cssClass);
