@@ -27,7 +27,7 @@ const phrases = [
 
 
 //Hides the Wheel of Success overlay to display game
-function clearOverlay(display, cssClass, buttonElement){
+function clearOverlay(display, cssClass){
 	overlay.addEventListener('click', (e) => {
 		overlay.style.display = display;
 		overlay.classList.add(cssClass);
@@ -131,7 +131,13 @@ function checklose(){
 		resetGame = true;
 	}
 }
+// Reset hearts
+const olli = document.querySelectorAll('.tries img');
+const gameOver = true; // Set this variable based on your game logic
 
+for (var i = 0; i < olli.length; i += 1) {
+  olli[i].src = gameOver ? "images/lostHeart.png" : "images/liveHeart.png";
+}
 qwerty.addEventListener('click', (e) => {
 	let letterFound = checkLetter(e.target);
 	if (e.target.tagName === 'BUTTON'){
