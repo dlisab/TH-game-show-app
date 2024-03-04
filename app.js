@@ -8,6 +8,8 @@ const letters = document.getElementsByClassName('letter');
 const show = document.getElementsByClassName('show');
 const buttons = document.getElementsByTagName('button');
 const scoreboard = document.getElementById('scoreboard');
+const myButton = document.getElementById('myButton');
+
 
 var score;
 var missed = 0;
