@@ -131,7 +131,23 @@ function checklose(){
 		resetGame = true;
 	}
 }
+function checklose(){
+	missed+=1;
+	const ol = scoreboard.firstElementChild;
+	const li = ol.children[missed - 1];
+	const img = li.querySelector('img');
+	if (missed <= 5) {
+		img.src = "images/lostHeart.png";
+	}
 
+	if (missed >= 5) {
+		title.innerHTML = 'YOU LOSE';
+		reset.innerHTML = 'Try Again?';
+		overlay.style.display = 'flex';
+		overlay.classList.add('lose');
+		resetGame = true;
+	}
+}
 qwerty.addEventListener('click', (e) => {
 	let letterFound = checkLetter(e.target);
 	if (e.target.tagName === 'BUTTON'){
